@@ -1,0 +1,83 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+:root {
+  --clr-primary-light: hsl(0, 0%, 100%);
+  --clr-background: hsl(212, 45%, 89%);
+  --clr-paragraph: hsl(220, 15%, 55%);
+  --clr-header: hsl(218, 44%, 22%);
+
+  --fs-base: 15px;
+
+  --ff-main: 'Outfit', sans-serif;
+
+  --fw-reguler: 400;
+  --fw-bold: 700;
+}
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  /* desktop: 1440px; */
+}
+
+.flex {
+  display: flex;
+}
+
+.fd-c {
+  flex-direction: column;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+main {
+  min-height: 100vh;
+  background-color: var(--clr-background);
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: var(--clr-primary-light);
+  max-width: 375px;
+  margin: 2rem;
+
+  padding: 1rem;
+  border-radius: 1.5rem;
+  gap: 1rem;
+
+  font-size: var(--fs-base);
+  font-family: var(--ff-main);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.card .text {
+  gap: 1rem;
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+.card h1 {
+  color: var(--clr-header);
+  font-size: 1.5rem;
+  font-weight: var(--fw-bold);
+
+  line-height: 2rem;
+}
+
+.card p {
+  color: var(--clr-paragraph);
+  line-height: 1.25rem;
+}
